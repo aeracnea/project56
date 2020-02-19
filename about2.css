@@ -1,0 +1,380 @@
+/*--font import --*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+/*--body setting --*/
+body
+{
+  overflow-x: hidden; 	/*--to remove scroll bar sa baba --*/
+  font-family:  		/*--font type --*/
+  color:red;			/*--color --*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*.container-fluid
+{
+  padding: 3% 10%;
+}
+
+--navbar --*/
+.navbar 
+{
+  text-transform: uppercase; 
+  font-weight: 400; 
+  font-size: .9rem; 
+  background: rgba(0,0,0,.4)!important;
+}
+
+.navbar-brand img
+{
+  height: 4rem;
+  padding-left: 4rem;
+}
+  /*--navbar item padding --*/
+.navbar-nav li
+{
+  padding-right: .1rem;
+}
+/*--navbar List item setting --*/
+.navbar-dark .navbar-nav .nav-link 
+{
+  color:white;
+  padding-top: 0.8rem;
+  text-shadow: .1rem .1rem .8rem black;
+}
+
+  /*--hover color to item in navbar --*/
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+  color: red;
+  border-bottom: 2px solid white;
+  font-weight: 800;
+}
+.active 
+{
+   font-weight: 1000;
+}
+
+/*--scrooll color change --*/
+.bg-transparent 
+{
+	background:transparent !important;
+	transition:0.75s ease;
+}
+.bg-transparent.scrolled
+{
+	background:rgba(0,0,0,.8) !important;
+}
+/*--slider --*/
+
+
+
+.heading-underline
+{
+	width: 30%;
+	height: .2rem;
+	background-color: red;
+	margin: 0 auto 2%;  /*-- margin to center item in the middle --*/
+}
+
+/*============= ABOUT SECTION =============*/
+
+.about-container
+{
+background-image: url(../img/Cityhall.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 7rem;
+padding-left:5%;
+padding-right:5%;
+}
+h3.heading
+{
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 2%;
+  color:#fd7e14;
+  text-align: center;
+}
+.title
+{
+ padding-bottom: 1rem;
+ color: red;
+}
+.bg-content
+{
+  background-color: rgba(255,255,255,0.8) !important;
+}
+
+
+.centered
+{
+  color: white !important;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5) !important;
+  padding: 10px
+
+}
+
+.box
+{
+  position: relative;
+  background-image: url("about/historyImage.jpeg");
+  height: 150px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin:4rem auto 4rem;
+  border-radius: 10px;
+}
+
+
+
+
+/*============= Footer SECTION =============*/
+
+
+.page-footer
+{
+	background-color: #dc3545;
+}
+
+.fa 
+{
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 4px;
+}
+.fa:hover
+ {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.fa-facebook 
+{
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter 
+{
+  background: #55ACEE;
+  color: white;
+}
+h5.text-dark
+{
+  margin-top: 1rem;
+}
+
+.label
+{
+  color: white !important;
+  font-weight: 600;
+}
+a:hover
+{
+  text-decoration: none;
+  color:orange;
+}
+
+.page-footer
+{
+  padding: 3% 10%;
+}
+
+/*============= device width larger than 768px =============*/
+@media (min-width: 768px) 
+{ 
+
+
+.official-text {
+  font-size: 1.5rem;
+  line-height: 1.0;
+  padding: 0;
+  margin: 0;
+}
+
+.city-text
+{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #f70000;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.testimonial-text
+{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #f8f9fa;
+}
+
+.img-official
+{
+  height: 210px;
+  width: 250px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}	
+
+}
+
+/*============= device width lower than 768px =============*/
+
+@media (max-width: 767px)
+{
+
+
+/*--navbar --*/
+.navbar
+{
+  background: rgba(0,0,0,.4) !important;
+}
+.navbar-nav
+{
+	text-align: center;
+}
+/*--navbar li color when screen is xs --*/
+.navbar-nav.ml-auto
+{
+	background: black;
+}
+.navbar-brand img
+{
+  height: 4rem;
+  padding-left: 0;
+}
+  /*--navbar item padding --*/
+.navbar-nav li
+{
+  padding-right: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+  color: red;
+  border-bottom: 1px solid white;
+  font-weight: 1000;
+}
+
+
+.carousel-item
+{
+  height: 60vh; 
+}
+.carousel-caption
+{
+	position: absolute;
+	top:30%;
+	text-transform: uppercase;
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+.carousel-caption h1
+{
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+.carousel-caption h3
+{
+	font-size: 1rem;
+	font-weight: 700;
+	color: red;
+}
+
+
+.padding
+{
+	padding: 1rem;
+}
+
+.carousel-inner > .official
+{
+ height: 55vh; 
+}
+
+h3.heading
+{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  color:#fd7e14;
+}
+
+.official-text {
+  font-size: .7rem;
+  line-height: 1.0;
+  padding: 0;
+  margin: 0;
+}
+.city-text
+{
+  font-size: .6rem;
+  line-height: 1.5;
+  color: #f70000;
+  padding-bottom: 3px;
+  margin: 0;
+}
+.testimonial-text
+{
+  font-size: .6rem;
+  line-height: 1.5;
+  color: #f8f9fa;
+}
+
+.img-official
+{
+  height: 110px;
+  width: 150px;
+  margin-bottom: 3px;
+  border-radius: 15px;
+}
+
+/*============footer======*/
+.label
+{
+  font-size: 9px;
+  color: white !important;
+}
+.footer-copyright
+{
+  font-size: 9px;
+}
+
+}
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

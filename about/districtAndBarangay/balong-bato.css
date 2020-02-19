@@ -1,0 +1,388 @@
+/*--font import --*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+/*--body setting --*/
+body
+{
+  overflow-x: hidden; 	/*--to remove scroll bar sa baba --*/
+  font-family:  		/*--font type --*/
+  color:red;			/*--color --*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/*.container-fluid
+{
+  padding: 3% 10%;
+}
+--navbar --*/
+.navbar 
+{
+  text-transform: uppercase; 
+  font-weight: 450; 
+  font-size: .9rem; 
+  background: rgba(0,0,0,.4)!important;
+}
+.navbar-brand img
+{
+  height: 4rem;
+  padding-left: 4rem;
+}
+/*--navbar item padding --*/
+.navbar-nav li
+{
+  padding-right: .1rem;
+}
+/*--navbar List item setting --*/
+.navbar-dark .navbar-nav .nav-link 
+{
+  color:white;
+  padding-top: 0.8rem;
+  text-shadow: .1rem .1rem .8rem black;
+}
+/*--hover color to item in navbar --*/
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+  color: #fd7e14;
+  border-bottom: 2px solid white;
+  font-weight: 800;
+}
+.active 
+{
+   font-weight: 1000;
+}
+
+/*--scrooll color change --*/
+.bg-transparent 
+{
+	background:transparent !important;
+	transition:0.75s ease;
+}
+.bg-transparent.scrolled
+{
+	background:rgba(0,0,0,.8) !important;
+}
+/*--slider --*/
+.heading-underline
+{
+	width: 30%;
+	height: .2rem;
+	background-color: red;
+	margin: 0 auto 2%;  /*-- margin to center item in the middle --*/
+}
+
+/*============= balong-bato SECTION =============*/
+
+.district-container
+{
+  background-image: url(img/Cityhall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 6rem;
+  padding-left:5%;
+  padding-right:5%;
+  padding-bottom: 4rem;
+}
+h3.heading-balong
+{
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 2%;
+  color:#fd7e14;
+  text-align: center;
+  margin-top: 1rem;
+}
+h6.heading-froman
+{
+	text-align: center;
+}
+h6
+{
+	margin: 1rem auto 2rem;
+}
+.text-history
+{
+	color: #007bff;
+	padding: 1rem;
+}
+.title
+{
+ padding-bottom: 1rem;
+ color: red;
+}
+.sidebar a
+{
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+.sidebar a:hover
+{
+  background-color: #ccc;
+  border-top-right-radius:30px;
+  border-bottom-right-radius:30px; 
+}
+.sidebar a.district-active
+{
+  color: white;
+  background-color: #fd7e14;
+  border-top-right-radius:30px;
+  border-bottom-right-radius:30px; 
+}
+.sidebar
+{
+  padding-top: 5%;
+}
+.text-brgy
+{
+  text-decoration: none;
+  color: black;
+}
+.text-brgy:hover
+{
+  text-decoration: none;
+  color: #fd7e14;
+}
+p.content
+{
+  color: #616161;
+  padding: .8rem;
+}
+p
+{
+	text-align: left
+}
+.indent
+{
+  margin-left: 10px;
+}
+.text
+{
+	color: #696969;
+}
+
+/*============= Footer SECTION =============*/
+.page-footer
+{
+	background-color: #fd7e14;
+ 	padding: 3% 7%;
+}
+.fa-phone
+{
+  padding: 2px;
+  margin: 3px;
+}
+.fa-instagram
+{
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background: #696969;
+  color: white;
+}
+.fa-facebook
+{
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter
+{
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background: #40bbf4;
+}
+.fa-twitter:hover, .fa-facebook:hover, .fa-instagram:hover
+{
+  text-decoration: none;
+  color: black;
+  background: white;
+}
+.footer-h5
+{
+  margin-top: 1rem;
+  color: #fff;
+}
+.label
+{
+  color: white ;
+  font-weight: 400;
+}
+.hover-color:hover
+{
+  color: #696969;
+  text-decoration: none;
+}
+a.hover-color
+{
+  display:block;
+}
+h5
+{
+  font-size: 20px;
+  padding-top: .5rem;
+  font-weight: bolder;
+}
+/*============= device width larger than 768px =============*/
+
+
+/*============= device width lower than 768px =============*/
+
+@media (max-width: 767px)
+{
+  /*--navbar --*/
+  .navbar
+  {
+    background: rgba(0,0,0,.4) !important;
+  }
+  .navbar-nav
+  {
+  	text-align: center;
+  }
+  /*--navbar li color when screen is xs --*/
+  .navbar-nav.ml-auto
+  {
+  	background: black;
+  }
+  .navbar-brand img
+  {
+    height: 4rem;
+    padding-left: 0;
+  }
+    /*--navbar item padding --*/
+  .navbar-nav li
+  {
+    padding-right: 0;
+  }
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover
+  {
+    color: #fd7e14; /*orange--*/
+    border-bottom: 1px solid white;
+    font-weight: 1000;
+  }
+  .padding
+  {
+  	padding: 1rem;
+  }
+  /*============history======*/
+  h3.heading
+  {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 2%;
+    color:#fd7e14;
+    text-align: center;
+  }
+  p
+  {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  /*============footer======*/
+  .footer-copyright
+  {
+    font-size: 10px;
+  }
+  .fa-instagram
+  {
+    background: #696969;
+  }
+  .fa-facebook
+  {
+    background: #3B5998;
+  }
+  .fa-twitter
+  {
+    background: #40bbf4;
+  }
+  .fa-instagram ,.fa-facebook, .fa-twitter
+  {
+    padding: 10px;
+    font-size:20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%; 
+    color: white;
+  }
+  .fa-twitter:hover, .fa-facebook:hover, .fa-instagram:hover
+  {
+    text-decoration: none;
+    color: black;
+    background: white;
+  }
+  .footer-h5
+  {
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.4rem;
+  }
+  .label
+  {
+    color: white ;
+    font-weight: 400;
+    font-size: .9rem;
+  }
+  .hover-color:hover
+  {
+    color: #696969;
+  }
+  .page-footer
+  {
+    background-color: #fd7e14;
+    padding: 3% 3%;
+  }
+   h5
+  {
+    font-size: 25px;
+    padding-top: .5rem;
+    font-weight: bolder;
+  }
+
+}/* end of media query */
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
